@@ -1,19 +1,14 @@
-# wled-cmd
-Simple command line interface for WLED devices
+# wled-cmd.ps1
+Simple Windows Powershell interface for WLED devices
 
 # requirements
-There are only 2 tools called by this script:
-curl
-xmllint
-- Fedora: dnf install libxml2
-- Ubuntu: apt-get install libxml2-utils
-
+Powershell 4? (needs version verification/testing)
 # usage
 ```
-./wled-cmd 192.168.1.147 on
-./wled-cmd 192.168.1.147 brightness 128
-./wled-cmd 192.168.1.147 cycle (this one cycles through a list of effects in the script)
-./wled-cmd 192.168.1.147 fx 68
-./wled-cmd 192.168.1.147 status
-./wled-cmd 192.168.1.147 off
+powershell ./wled-cmd.ps1 192.168.1.147 on
+powershell ./wled-cmd.ps1192.168.1.147 brightness 128
+powershell ./wled-cmd.ps1192.168.1.147 cycle (this one cycles through a list of effects in the script)
+powershell ./wled-cmd.ps1192.168.1.147 fx 68
+powershell ./wled-cmd.ps1192.168.1.147 status
+powershell ./wled-cmd.ps1192.168.1.147 off
 ```
